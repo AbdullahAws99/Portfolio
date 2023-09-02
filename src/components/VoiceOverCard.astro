@@ -1,0 +1,25 @@
+---
+const { title, url, type = "youtube", target = "_blank" } = Astro.props;
+---
+
+<div
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+>
+  <a href={url} target={target}>
+    <div class="hero-content flex-col md:flex-row">
+      <iframe
+        width="720"
+        height="240"
+        src={url}
+        class="rounded-md overflow-hidden"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+      <div class="grow w-full">
+        <h1 class="text-xl font-bold">
+          {title}
+        </h1>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,188 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import EditedTimeLine from "../components/cv/EditedTimeLine.astro";
+---
+
+<BaseLayout sideBarActiveItemID="cv">
+  <div class="pb-12 mt-5">
+    <div class="flex justify-between">
+      <div class="text-xl py-1">Hey there 👋</div>
+      <a
+        class="btn btn-error"
+        target="_blank"
+        href="https://drive.google.com/file/d/1LPaD0urHnMFqzpZdHfMUbqYXdFTAsr8k/view?usp=drive_link"
+        >Download PDF CV</a
+      >
+    </div>
+    <div class="my-5 text-5xl font-bold">I'm Abdullah Mohammed Aws</div>
+
+    <div class="mb-10 text-justify">
+      Fresh graduate of computer science and seeking a data analyst engineer or
+      related field to apply my analytical and statistical skills to extract
+      hidden ideas and patterns from data and turn them into valuable
+      information for making intelligent decisions
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">EDUCATION</div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <EditedTimeLine
+        title="Bachelor of Computer Science"
+        at="Arab Open University"
+        subtitle="2019 to 2023, Jeddah, Saudi Arabia"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">PROFESSIONAL EXPERIENCE</div>
+    </div>
+
+    <div class="time-line-container mb-10">
+      <TimeLineElement
+        title="BUSINESS ANALYST, NABT APP, INTERNSHIP"
+        subtitle="From July 2023 to September 2023 at Nabt App"
+      >
+        <li>
+          Creating a detailed business analysis, outlining problems,
+          opportunities, and
+        </li>
+        <li>solutions for a business.</li>
+        <li>
+          Evaluating business processes, developing, and implementing solutions.
+        </li>
+        <li>
+          Gathering critical information from meetings with various stakeholders
+          and
+        </li>
+        <li>producing useful reports.</li>
+        <li>Planning and monitoring</li>
+        <li>Defining business requirements</li>
+        <li>Searching for competitors to develop the business (benchmark)</li>
+        <li>Write a user story.</li>
+      </TimeLineElement>
+      <TimeLineElement
+        title="Founder & Leader, Choose And Create Community (CAC), Nonprofit organization, Volorniting"
+        subtitle="From January 2023 to Present"
+      >
+        <li>
+          Training team members, setting strategy and monitoring progress
+          towards goals.
+        </li>
+        <li>Distributing information to team members and stakeholders</li>
+        <li>Determining the goals that members will work toward.</li>
+        <li>Provide more than 10 events in less than 3 months.</li>
+        <li>Reach 2k member in less than 4 months</li>
+      </TimeLineElement>
+      <TimeLineElement
+        title="Co-Lead & Leader Event, Google Developer Student Club (GDSC)"
+        subtitle="From July 2022 to July 2023"
+      >
+        <li>Plan, implement, lead participants in all activities.</li>
+        <li>Always ensure events management.</li>
+        <li>
+          Offers a boost that keeps me motivated and empowered to achieve our
+          goals.
+        </li>
+        <li>Planning engaging events for the participants.</li>
+      </TimeLineElement>
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">PROFESSIONAL CERTIFICATES</div>
+    </div>
+
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>
+        <a
+          class="underline"
+          href="https://www.coursera.org/account/accomplishments/professional-cert/FNR3HCAMKT6J?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof"
+          target="_blank"
+        >
+          Google Data Analytics Specialization, <strong>Google</strong></a
+        >
+        <small class="mx-2 text-secondary">February 2023</small>
+      </li>
+      <li>
+        <a
+          class="underline"
+          href="https://www.coursera.org/account/accomplishments/professional-cert/65LGQWKEKXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof"
+          target="_blank"
+          >Google Project Management Specialization, <strong>Google</strong></a
+        >
+        <small class="mx-2 text-secondary">October 2023</small>
+      </li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">PROFESSIONAL COURSES</div>
+    </div>
+
+    <ul class="list-disc grid mx-6 mb-10">
+      <li>
+        Python for Data Science and Machine Learning Bootcamp, <strong>
+          Udemy
+        </strong>
+        <small class="mx-2 text-secondary">September 2023</small>
+      </li>
+      <li>
+        Introduction to DAX in Power BI, <strong>DataCamp</strong>
+        <small class="mx-2 text-secondary">September 2023</small>
+      </li>
+      <li>
+        Data Analysis in Excel, <strong>DataCamp</strong>
+        <small class="mx-2 text-secondary">August 2023</small>
+      </li>
+      <li>
+        Intermediate SQL, <strong>DataCamp</strong>
+        <small class="mx-2 text-secondary">March 2023</small>
+      </li>
+      <li>
+        Understanding Data Visualization, <strong>DataCamp</strong>
+        <small class="mx-2 text-secondary">May 2023</small>
+      </li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold uppercase">Skills</div>
+    </div>
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold uppercase">Soft Skills</div>
+    </div>
+
+    <ul class="list-disc md:columns-2 columns-2 mx-6">
+      <li>Leadership</li>
+      <li>Time Management</li>
+      <li>Collaborator</li>
+      <li>Problem Solving</li>
+      <li>Organizer</li>
+      <li>Speaker</li>
+      <li>Flexible</li>
+    </ul>
+
+    <div class="my-5">
+      <div class="text-xl w-full font-bold uppercase">Technical Skills</div>
+    </div>
+
+    <ul class="list-disc md:columns-2 columns-2 mx-6">
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Excel</li>
+      <li>MongoDB</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Analytics</li>
+    </ul>
+
+    <div class="my-5">
+      <div class="text-3xl w-full font-bold uppercase">Language</div>
+    </div>
+
+    <ul class="list-disc md:columns-2 columns-2 mx-6">
+      <li>Arabic</li>
+      <li>English</li>
+    </ul>
+  </div>
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+import VoiceOverCard from "../components/VoiceOverCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout sideBarActiveItemID="voiceover">
+  <h1 class="text-3xl font-bold uppercase">Voice Over & Podcast</h1>
+  <div class="divider my-0"></div>
+
+  <VoiceOverCard
+    title="What is GDSC ?"
+    url="https://www.youtube.com/embed/aCS4VUVb-QM?si=SiZ6W2fji0eQ83M6"
+  />
+  <div class="divider my-0"></div>
+  <VoiceOverCard
+    title="مجتمع CAC التقني"
+    url="https://www.youtube.com/embed/HFbC1wgLAIA?si=6QnwJZGAZjnZfSro"
+  />
+  <div class="divider my-0"></div>
+  <VoiceOverCard
+    title="خواطر | حياتك بداخل شرنقة"
+    url="https://www.youtube.com/embed/JcuIS0TljLk?si=aF1Ifd4L2t0YIoIO"
+  />
+  <div class="divider my-0"></div>
+  <VoiceOverCard
+    title="أخبار الملوك | الإسكندر الأكبر ودارا الثالث"
+    url="https://www.youtube.com/embed/EWu1g9tG1Cs?si=lJ6nHFHNzY5BKSVo"
+  />
+</BaseLayout>
