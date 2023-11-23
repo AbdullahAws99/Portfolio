@@ -1,6 +1,57 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+
+const cardData = [
+  {
+    title: "Most wanted threads",
+    img: "https://iili.io/J9dWhKl.png",
+    url: "https://rattibha.com/AbdullahAws99",
+    tags: [
+      "Eduactions",
+      "SQL",
+      "Information About Data Analysis",
+      "Statistics",
+      "Data Visualization",
+    ],
+  },
+  {
+    title: "Sales Project",
+    img: "https://iili.io/Joa7Z3F.png",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiMmM2MTNkNmQtNjIwZS00NTM2LWE1ZjAtZjhmYWE0MmI1YWNlIiwidCI6ImNmNzIyMWNkLTNiYzYtNDEwMS04NzYyLTU0ZjQ0ZjNiYzg5YSIsImMiOjl9&pageName=ReportSection8659d07c25b72019b50e",
+    tags: [
+      "Eduactions",
+      "SQL",
+      "Information About Data Analysis",
+      "Statistics",
+      "Data Visualization",
+    ],
+  },
+  {
+    title: "Resturant Rating Project",
+    img: "https://iili.io/Joa7L41.png",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiZDhhNjBmM2ItOTk3Yy00YzAxLWI3MDctZWI3MGQ1MjRkODYzIiwidCI6ImNmNzIyMWNkLTNiYzYtNDEwMS04NzYyLTU0ZjQ0ZjNiYzg5YSIsImMiOjl9&pageName=ReportSectionca9e7b5359073cd2d908",
+    tags: [
+      "Eduactions",
+      "SQL",
+      "Information About Data Analysis",
+      "Statistics",
+      "Data Visualization",
+    ],
+  },
+  {
+    title: "Real Madrid and Sergio Ramos football results",
+    img: "https://iili.io/J9dM3Ou.png",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiZWI3ZTMxYmQtMzQwMy00ZGQ5LTk2NDEtZjAwOTk4OGU0ZmU5IiwidCI6ImNmNzIyMWNkLTNiYzYtNDEwMS04NzYyLTU0ZjQ0ZjNiYzg5YSIsImMiOjl9&pageName=ReportSection",
+    tags: ["Excel", "Power BI", "DAX", "Data Analysis", "Data Visualization"],
+  },
+  {
+    title: "Covid SQL Project",
+    url: "https://github.com/AbdullahAws99/Covid-SQL-project",
+    img: "https://www.amprogress.org/wp-content/uploads/2020/03/Microbes-1-800x450.jpg",
+    tags: ["COVID-19", "SQL", "Data Analysis", "Statistics"],
+  },
+];
 ---
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
@@ -8,30 +59,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     <div class="text-3xl w-full font-bold mb-5">PROJECTS</div>
   </div>
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Most wanted threads"
-    img="https://iili.io/J9dWhKl.png"
-    url="https://rattibha.com/AbdullahAws99"
-    tags={[
-      "Eduactions",
-      "SQL",
-      "Information About Data Analysis",
-      "Statistics",
-      "Data Visualization",
-    ]}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Real Madrid and Sergio Ramos football results"
-    img="https://iili.io/J9dM3Ou.png"
-    url="https://app.powerbi.com/view?r=eyJrIjoiZWI3ZTMxYmQtMzQwMy00ZGQ5LTk2NDEtZjAwOTk4OGU0ZmU5IiwidCI6ImNmNzIyMWNkLTNiYzYtNDEwMS04NzYyLTU0ZjQ0ZjNiYzg5YSIsImMiOjl9&pageName=ReportSection"
-    tags={["Excel", "Power BI", "DAX", "Data Analysis", "Data Visualization"]}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Covid SQL Project"
-    url="https://github.com/AbdullahAws99/Covid-SQL-project"
-    img="https://www.amprogress.org/wp-content/uploads/2020/03/Microbes-1-800x450.jpg"
-    tags={["COVID-19", "SQL", "Data Analysis", "Statistics"]}
-  />
+  <div class="grid grid-cols-1">
+    {cardData.map((card) => <HorizontalCard {...card} />)}
+  </div>
 </BaseLayout>
